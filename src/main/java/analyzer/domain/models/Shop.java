@@ -1,4 +1,4 @@
-package analyzer.models;
+package analyzer.domain.models;
 
 import java.util.List;
 
@@ -39,4 +39,7 @@ public class Shop {
     public void setId(Long id) {
         this.id = id;
     }
+
+    @OneToMany(mappedBy = "shop")
+    private List<Comment> comments;
 }

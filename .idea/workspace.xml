@@ -4,54 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb7661f9-b111-4cf8-9ba5-ea708a648889" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ShopRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/product/load_product_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/product/products.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/shop/load_shop_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/shop/shops.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/init/001-init.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_govydina.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_milk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_svinina.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/globus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/globusMilk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/perek.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_chicken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_govyadina.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_milk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_svinina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+    <list default="true" id="eb7661f9-b111-4cf8-9ba5-ea708a648889" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/config/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/dto/UserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/dto/UserRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/models/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/security/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/models/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/domain/models/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/repos/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/repos/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/repos/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ShopRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/init/001-init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/init/001-init.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +77,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Liquibase Changelog" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,30 +93,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Elena/Desktop/PriceAnalyzeWithSecurity/price-analyzer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "a1b8ffd040e89b8903ddda71b500ccf7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elena/Desktop/PriceAnalyzeWithSecurity/price-analyzer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a1b8ffd040e89b8903ddda71b500ccf7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elena\Desktop\PriceAnalyzeCourseWork\price-analyzer\src\main\resources\static" />
@@ -154,11 +151,26 @@
       <workItem from="1703606814392" duration="952000" />
       <workItem from="1703608153601" duration="7751000" />
       <workItem from="1703618210522" duration="15170000" />
-      <workItem from="1703635808121" duration="278000" />
+      <workItem from="1703635808121" duration="3707000" />
+      <workItem from="1703639545567" duration="590000" />
+      <workItem from="1703668841337" duration="2000" />
+      <workItem from="1703668877295" duration="3638000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1703636207377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703636207377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

@@ -1,9 +1,8 @@
 package analyzer.services;
 
 import java.util.List;
-import java.util.Optional;
 
-import analyzer.models.Base;
+import analyzer.domain.models.Base;
 
 public interface BaseService {
     void addBase(Base base);

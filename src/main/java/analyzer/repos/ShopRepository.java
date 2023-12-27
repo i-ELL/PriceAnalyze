@@ -1,6 +1,6 @@
 package analyzer.repos;
 
-import analyzer.models.Shop;
+import analyzer.domain.models.Shop;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ShopRepository extends JpaRepository<Shop, Long> {

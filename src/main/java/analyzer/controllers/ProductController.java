@@ -2,7 +2,7 @@ package analyzer.controllers;
 
 import java.util.List;
 
-import analyzer.models.Product;
+import analyzer.domain.models.Product;
 import analyzer.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

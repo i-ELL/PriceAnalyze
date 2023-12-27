@@ -1,9 +1,8 @@
 package analyzer.services;
 
 import java.util.List;
-import java.util.Optional;
 
-import analyzer.models.Shop;
+import analyzer.domain.models.Shop;
 
 public interface ShopService {
 

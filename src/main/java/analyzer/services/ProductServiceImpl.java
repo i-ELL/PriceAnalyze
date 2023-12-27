@@ -2,7 +2,7 @@ package analyzer.services;
 
 import java.util.List;
 
-import analyzer.models.Product;
+import analyzer.domain.models.Product;
 import analyzer.repos.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

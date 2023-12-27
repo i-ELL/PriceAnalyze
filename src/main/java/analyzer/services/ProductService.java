@@ -2,7 +2,7 @@ package analyzer.services;
 
 import java.util.List;
 
-import analyzer.models.Product;
+import analyzer.domain.models.Product;
 
 public interface ProductService {
 

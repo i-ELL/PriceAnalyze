@@ -1,4 +1,4 @@
-package analyzer.models;
+package analyzer.domain.models;
 
 import java.util.List;
 

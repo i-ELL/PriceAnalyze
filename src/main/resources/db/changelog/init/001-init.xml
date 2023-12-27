@@ -65,6 +65,31 @@
                                  referencedColumnNames="id" />
     </changeSet>
 
+    <changeSet author="admin" id="create_table_users">
+        <createTable tableName="users">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints  nullable="false"/>
+            </column>
+            <column name="username" type="varchar(255)"/>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="role" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="admin" id="create_table_comment">
+        <createTable tableName="comment">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints  nullable="false"/>
+            </column>
+            <column name="description" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
 
 
 

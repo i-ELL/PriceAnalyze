@@ -1,9 +1,8 @@
 package analyzer.services;
 
 import java.util.List;
-import java.util.Optional;
 
-import analyzer.models.Base;
+import analyzer.domain.models.Base;
 import analyzer.repos.BaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
