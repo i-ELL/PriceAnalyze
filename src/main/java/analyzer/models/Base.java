@@ -1,6 +1,6 @@
 package analyzer.models;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
@@ -13,44 +13,58 @@ public class Base {
     @Column(name = "time")
     private Date time;
 
+    @ManyToOne
+    @JoinColumn(name="product_id")
+    private Product product;
+
+    @ManyToOne
+    @JoinColumn(name="shop_id")
+    private Shop shop;
+
     @Id
     @SequenceGenerator(name = "base_seq", sequenceName = "base_sequence", allocationSize = 1)
     @GeneratedValue(generator = "base_seq", strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "product_in_base",
-            joinColumns = { @JoinColumn(name = "base_id") },
-            inverseJoinColumns = { @JoinColumn(name = "product_id") }
-    )
-    List<Product> products;
-
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "shop_in_base",
-            joinColumns = { @JoinColumn(name = "base_id") },
-            inverseJoinColumns = { @JoinColumn(name = "shop_id") }
-    )
-    List<Shop> shops;
-
-
     public Base() {
     }
 
-    public Base(Long price, Date time, List<Shop> shops, List<Product> products, long id) {
+    public Base(Long price, Date time, Shop shop, Product product, long id) {
         this.price = price;
         this.time = time;
-        this.shops = shops;
-        this.products = products;
+        this.shop = shop;
+        this.product = product;
         this.id = id;
     }
 
-    public Base(Long price, Date time, List<Shop> shops, List<Product> products) {
+    public Base(Long price, Date time, Shop shop, Product product) {
         this.price = price;
         this.time = time;
-        this.shops = shops;
-        this.products = products;
+        this.shop = shop;
+        this.product = product;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public Long getPrice() {
+        return price;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
 }

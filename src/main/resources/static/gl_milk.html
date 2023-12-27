@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="../favicon.png"/>
+  <title>Молоко Глобус</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+</head>
+
+<body style="background-color:  #ffffff; color: #000000;" onload="script()">
+  <header>
+    <a href="./globus.html" style="text-decoration: none;"><h6 style="color: #777777; text-decoration: none; margin: 1em; display: inline;">В магазин</h6></a>
+    <a href="./index.html" style="text-decoration: none;"><h6 style="color: #777777; text-decoration: none; margin: 1em; display: inline;">На главную</h6></a>
+  </header>
+
+  <h1 style="text-align: center; ">Цены на молоко в Глобус</h1>
+
+ 
+<canvas id="myChart" style="display: block; border-radius: 16px; border: 4px solid rgb(79, 176, 69);" class="chartjs-render-monitor"></canvas>
+  <script>
+    let url1 = "https://www.globus.ru/catalog/molochnye-produkty-syr-yaytsa/moloko-i-molochnye-produkty/moloko/?page=1";
+    let url2 = "https://www.globus.ru/catalog/molochnye-produkty-syr-yaytsa/moloko-i-molochnye-produkty/moloko/?page=2"
+    let request1 = fetch(url1);
+    let request2 = fetch(url2);
+    Promise.all([request1, request2])
+  .then(responses => {
+    return Promise.all(responses.map(response => response.text()));;
+  })
+
+    .then(html => {
+      
+      let parser = new DOMParser();
+      let doc = parser.parseFromString(html, 'text/html');
+
+      let prices = Array.from(doc.querySelectorAll('.pim-list__item-price-actual-main')).map(p => p.innerText.trim());
+      let names = Array.from(doc.querySelectorAll('.pim-list__item-title.js-crop-text')).map(p => p.innerText.trim());
+
+      let names1 = [];
+      let prices1 = [];
+      prices.sort((a, b) => a - b);
+
+      for (let i = 0; i < names.length; i++){
+        if(names[i].includes("1 л")){
+          names1.push(names[i]);
+          prices1.push(prices[i]);
+        }
+      }
+
+      console.log(names1);
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: names1,
+          datasets: [{
+            data: prices1,
+            label: "Молоко Глобус",
+            borderColor: "rgb(79, 176, 69)", 
+            backgroundColor: "rgb(79, 176, 69, 0.3)",
+          } 
+          ]
+        },
+      });
+
+    })
+    .catch(error => {
+      alert('Ошибка получения данных. Возможно у Вас отстутсвует подключение к интернету.');
+    });
+  </script>
+
+  <h2 style="text-align: center; margin: 3em 0em 1em;">Динамика роста цен на Молоко Цельное Эконива 3,3-6%, 1 л</h2>
+  <canvas id="myChart2" width="637" height="255"  style="display: block; border-radius: 16px; border: 4px solid rgb(79, 176, 69); height: 204px; width: 510px;"
+  class="chartjs-render-monitor"></canvas>
+  <h2 style="text-align: center; margin: 3em 0em 1em;">Динамика роста цен на Молоко ультрапастеризованное Parmalat 3,5%, 1 л</h2>
+  <canvas id="myChart3" width="637" height="255"  style="display: block; border-radius: 16px; border: 4px solid rgb(79, 176, 69); height: 204px; width: 510px;"
+  class="chartjs-render-monitor"></canvas>
+  <h2 style="text-align: center; margin: 3em 0em 1em;">Динамика роста цен на Молоко пастеризованное Углече Поле органическое 3,2%, 1 л</h2>
+  <canvas id="myChart4" width="637" height="255"  style="display: block; border-radius: 16px; border: 4px solid rgb(36,36,36); height: 204px; width: 510px;"
+  class="chartjs-render-monitor"></canvas>
+
+
+  <script>
+    function script(){
+      let url1 = 'http://127.0.0.1:8080/base/getByProduct/' + 4;
+      let url2 = 'http://127.0.0.1:8080/base/getByProduct/' + 3;
+      let url3 = 'http://127.0.0.1:8080/base/getByProduct/' + 7;
+      let urls = [url1, url2, url3]
+      let charts = ['myChart2', 'myChart3', 'myChart4']
+      for (let i = 0; i < urls.length; i++){
+        fetch(urls[i])
+        .then(response => response.json())
+      
+        .then(data => {
+        let times = data.map(d => d["time"])
+        let times1 = []
+        let prices = data.map(d => d["price"])
+        for (let i = 0; i < times.length; i++){
+          times1.push(times[i].toString().split('T')[0]);
+        }
+        var ctx = document.getElementById(charts[i]).getContext('2d');
+                    var myChart = new Chart(ctx, {
+                      type: 'line',
+                      data: {
+                        labels: times1,
+                        datasets: [{
+                          data: prices,
+                          label: "Молоко",
+                          borderColor: "rgb(79, 176, 69)", 
+                        backgroundColor: "rgb(79, 176, 69, 0.3)",
+                        }
+                      ]
+            },
+          })
+        })
+        .catch(error => {
+          console.log(error);
+          alert('Ошибка получения данных. Возможно у Вас отстутсвует подключение к интернету.');
+        });
+      }
+    }
+    
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+
+
+    <button  class="favorite styled" type="button"> <a href="index.html">На главную</a>
+        <style>
+            .styled {
+    position: absolute;
+    right: 0;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(0, 220, 110);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(0, 255, 110);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+        </style>
+    </button>
+</body>
+
+</html>

@@ -1,14 +1,19 @@
 package analyzer.models;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Products", schema = "public")
+@Table(name = "Product", schema = "public")
 public class Product {
     @Column(name = "name")
     private String name;
     @Column(name = "description")
     private String description;
+
+    @OneToMany(mappedBy = "product")
+    private List<Base> bases;
 
     @Id
     @SequenceGenerator(name = "product_seq", sequenceName = "product_sequence", allocationSize = 1)

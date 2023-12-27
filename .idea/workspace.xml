@@ -4,8 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7895b781-ebc0-4973-a9c0-068d8d350d0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="eb7661f9-b111-4cf8-9ba5-ea708a648889" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/repos/ShopRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/product/load_product_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/product/products.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/shop/load_shop_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/data/shop/shops.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/init/001-init.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_govydina.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_milk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gl_svinina.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/globus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/globusMilk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/perek.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_chicken.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_govyadina.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_milk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pr_svinina.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/controllers/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/models/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/models/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/services/ShopService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +66,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="product-analyzer" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="product-analyzer" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -46,69 +83,82 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Liquibase Changelog" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2Y840jOrTAOEVWg8KKnlQPbRkXS" />
+  <component name="ProjectId" id="2a5SAgKjny6IJGW5y4cMB45vaez" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Elena/Desktop/PriceAnalyzeWithSecurity/price-analyzer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "a1b8ffd040e89b8903ddda71b500ccf7",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elena\Desktop\PriceAnalyzeCourseWork\price-analyzer\src\main\resources\static" />
+      <recent name="C:\Users\Elena\Desktop\PriceAnalyzeCourseWork\price-analyzer\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elena\Desktop\PriceAnalyzeCourseWork\price-analyzer\src\main\resources\templates" />
+      <recent name="C:\Users\Elena\Desktop\PriceAnalyzeCourseWork\price-analyzer\src\main\resources\db\changelog\init" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="price-analyzer" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="PriceAnalyzerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product-analyzer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="analyzer.PriceAnalyzerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7895b781-ebc0-4973-a9c0-068d8d350d0c" name="Changes" comment="" />
-      <created>1699893655011</created>
+      <changelist id="eb7661f9-b111-4cf8-9ba5-ea708a648889" name="Changes" comment="" />
+      <created>1703606812459</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699893655011</updated>
+      <updated>1703606812459</updated>
+      <workItem from="1703606814392" duration="952000" />
+      <workItem from="1703608153601" duration="7751000" />
+      <workItem from="1703618210522" duration="15170000" />
+      <workItem from="1703635808121" duration="278000" />
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

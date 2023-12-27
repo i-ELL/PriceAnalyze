@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create-sequence-for-base-id" author="admin">
+        <createSequence sequenceName="base_sequence" startValue="1" incrementBy="1"/>
+    </changeSet>
+    <changeSet id="create-sequence-for-shop-id" author="admin">
+        <createSequence sequenceName="shop_sequence" startValue="1" incrementBy="1"/>
+    </changeSet>
+    <changeSet id="create-sequence-for-product-id" author="admin">
+        <createSequence sequenceName="product_sequence" startValue="1" incrementBy="1"/>
+    </changeSet>
+
+    <changeSet id="create-table-shop" author="admin">
+        <createTable tableName="shop">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="character varying">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-table-product" author="admin">
+        <createTable tableName="product">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="character varying">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="character varying">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-table-base" author="admin">
+        <createTable tableName="base">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="product_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="shop_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="base" baseColumnNames="shop_id"
+                                 constraintName="shop_fk" referencedTableName="shop"
+                                 referencedColumnNames="id" />
+        <addForeignKeyConstraint baseTableName="base" baseColumnNames="product_id"
+                                 constraintName="product_fk" referencedTableName="product"
+                                 referencedColumnNames="id" />
+    </changeSet>
+
+
+
+
+
+</databaseChangeLog>
